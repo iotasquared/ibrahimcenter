@@ -1,0 +1,25 @@
+{
+  "name": "ibrahimcenter",
+  "version": "1.0.0",
+  "description": "The canonical memory of Ibrahim Islamic Center, Houston (618 Baca Street, Third Ward roots, founded by converts 20+ years ago). Everything true about the institution lives here as plain text; the public website is a projection built from it. The only editing interface is the AI consultant — see [CLAUDE.md](CLAUDE.md) for the constitution (one-interface law, approval law, privacy boundary, entity conventions).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotasquared/ibrahimcenter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iotasquared/ibrahimcenter/issues"
+  },
+  "homepage": "https://github.com/iotasquared/ibrahimcenter#readme",
+  "dependencies": {
+    "js-yaml": "^5.2.1",
+    "marked": "^18.0.7"
+  }
+}
