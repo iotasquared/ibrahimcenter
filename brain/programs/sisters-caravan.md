@@ -2,6 +2,7 @@
 slug: sisters-caravan
 title: Sisters Caravan
 layer: program
+accent: "#a05a48"
 lifecycle: active
 status: draft
 owner: amna

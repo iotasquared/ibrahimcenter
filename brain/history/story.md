@@ -15,7 +15,11 @@ facts:
   founded_by: "Converts (approved general description pending founder interviews)"
   third_ward: "20+ years as a cornerstone within Houston's Third Ward"
   new_campus: "618 Baca Street — the move, growth, and future vision to be told"
-  documentary: "Exists ('Watch Our Story' hero link) — URL + embed permission pending"
+  move_timeline:
+    last_jumuah_old_campus: "2026-04-24 — 7563 South Fwy, Houston TX 77021"
+    first_jumuah_baca: "2026-05-01 — 618 Baca St"
+    grand_opening: "2026-05-22/24 — 'A Gathering of Shukr' weekend (Shaykh Jamaal Diwan, Shaykha Muslema Purmul, Shaykh Dr. Jihad Saafir, Shaykh Fouad Elgohari, Shaykh Khalis Rashaad)"
+  documentary: "'A Story of Hearts' — a film by Abdurrahman Danquah — URL + embed permission pending"
 card: >-
   Founded by converts who sought not simply a place to pray, but a community in
   which Islam could be learned, lived, and loved.

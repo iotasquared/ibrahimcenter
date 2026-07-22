@@ -66,10 +66,18 @@ function gate(e) { return visible(e) ? e : null; }
 
 // ---------- render helpers ----------
 const md = s => marked.parse(s ?? "", { mangle: false, headerIds: false });
+// mix an accent hex toward ivory for page-head washes (t = accent share)
+function wash(hex, t = 0.09) {
+  const iv = [0xf8, 0xf3, 0xe9];
+  const c = hex.match(/[\da-f]{2}/gi).map(h => parseInt(h, 16));
+  return "#" + c.map((v, i) => Math.round(v * t + iv[i] * (1 - t)).toString(16).padStart(2, "0")).join("");
+}
+const accentStyle = e => e?.accent ? ` style="--accent:${e.accent};--accent-wash:${wash(e.accent)}"` : "";
 export const ctx = {
   staging: STAGING,
   md,
   draft,
+  accentStyle,
   today: new Date().toISOString().slice(0, 10),
 };
 

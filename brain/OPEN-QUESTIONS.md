@@ -68,5 +68,15 @@
 - [ ] Events: first three real events (title/date/description/image/registration) — Amna
 - [ ] Google Calendar: publish/subscribe decision (§8.1) — Amna
 - [ ] Daily prayer times on site: yes/no (workbook only ever mentions Jumu'ah — intentional?) — Amna/Shaykh Khalis
+
+## Surfaced by the IG deep-dive (2026-07-22, not in workbook)
+
+- [ ] **Family Majlis** ("a monthly pulse of heart & soul") — still running? Belongs on Programs? — Amna
+- [ ] **Umrah trip** (Nov 21–28, 2026, led by Shaykh Khalis) — does it get a page/program entry? (Old site had an Umrah page) — A.J.
+- [ ] Scholar-speaker series (Ubaydullah Evans etc.) — a recurring program or events-only? — A.J.
+- [ ] "Rumi Cafe Cart" = the coffee shop's real name? — Amna
+- [ ] Brand files: logo vectors, fonts, brand guide; palette hexes approved vs. my by-eye harvest (`identity/design-language.md`) — Amna
+- [ ] "A Story of Hearts" (film by Abdurrahman Danquah): hosting URL + embed permission — Amna
+- [ ] linktr.ee/ibrahimcenter: retire into the site once live? — Amna
 - [ ] SEO: homepage title + 150–160 char description; per-page titles; local search terms; alt-text owner; captions owner (§12.4) — Dan drafts, Amna approves
 - [ ] Analytics: whether to run any, and account ownership (§12.3) — Dan

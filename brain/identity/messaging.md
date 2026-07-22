@@ -12,6 +12,7 @@ last_verified: null
 review: annual
 facts:
   tagline_current_site: "love. service. friendship."
+  tagline_ig_and_campus_sign: "A community built on love and service, presence, sacred knowledge, and the radiant legacy of our Prophet ﷺ."
 card: >-
   The approved sitewide copy blocks — hero, welcome, section headings, CTAs —
   that pages compose from.

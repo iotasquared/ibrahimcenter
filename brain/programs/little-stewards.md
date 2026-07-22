@@ -2,6 +2,7 @@
 slug: little-stewards
 title: Little Stewards (children's programming initiative)
 layer: program
+accent: "#37827b"
 lifecycle: active
 status: draft
 owner: fatima

@@ -2,6 +2,7 @@
 slug: thursday-class
 title: Weekly Thursday Class
 layer: program
+accent: "#1d4033"
 lifecycle: active
 status: draft
 owner: null

@@ -2,6 +2,7 @@
 slug: young-stewards-sunday-school
 title: Young Stewards Sunday School
 layer: program
+accent: "#37827b"
 lifecycle: active
 status: draft
 owner: fatima

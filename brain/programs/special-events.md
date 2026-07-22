@@ -2,6 +2,7 @@
 slug: special-events
 title: Special Events
 layer: program
+accent: "#5e1f24"
 lifecycle: active
 status: draft
 owner: amna

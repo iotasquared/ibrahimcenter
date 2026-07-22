@@ -2,6 +2,7 @@
 slug: menaissance
 title: Menaissance
 layer: program
+accent: "#33241a"
 lifecycle: active
 status: draft
 owner: aj

@@ -1,6 +1,8 @@
 // Templates — plain functions returning HTML strings. No client JS anywhere.
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+const ORNAMENT = `<div class="ornament" aria-hidden="true"><svg viewBox="0 0 120 12" fill="none"><path d="M0 6h44M76 6h44" stroke="var(--gold)" stroke-width="1"/><rect x="55" y="1" width="10" height="10" transform="rotate(45 60 6)" stroke="var(--gold)" stroke-width="1.2"/><circle cx="48" cy="6" r="1.4" fill="var(--gold)"/><circle cx="72" cy="6" r="1.4" fill="var(--gold)"/></svg></div>`;
+
 const NAV = [
   ["/", "Home"], ["/visit/", "Visit"], ["/about/", "About"], ["/programs/", "Programs"],
   ["/events/", "Events"], ["/little-stewards/", "Little Stewards"], ["/new-to-islam/", "New to Islam"],
@@ -24,7 +26,7 @@ export function shell({ ctx, title, content, path }) {
 ${ctx.staging ? `<div class="staging-ribbon">Staging preview — unapproved draft content. Not the public site.</div>` : ""}
 <header class="site-header">
   <a class="brand" href="/">
-    <span class="brand-mark" aria-hidden="true"></span>
+    <svg class="brand-mark" aria-hidden="true" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18.5" stroke="var(--ink)" stroke-width="1.6"/><circle cx="20" cy="20" r="15.5" stroke="var(--gold)" stroke-width="1"/><rect x="9.6" y="9.6" width="20.8" height="20.8" stroke="var(--gold)" stroke-width="1.6"/><rect x="9.6" y="9.6" width="20.8" height="20.8" stroke="var(--gold)" stroke-width="1.6" transform="rotate(45 20 20)"/></svg>
     <span class="brand-text"><strong>Ibrahim</strong> Islamic Center</span>
   </a>
   <details class="nav-toggle">
@@ -87,10 +89,10 @@ export function home({ ctx, identity, cardPrograms, upcoming, littleStewards, do
 
 <section class="band">
   <div class="band-inner">
-    <h2 class="center">Find Your Place at Ibrahim Center</h2>
+    <h2 class="center">Find Your Place at Ibrahim Center</h2>${ORNAMENT}
     <div class="card-grid">
       ${cardPrograms.map(p => `
-      <a class="card" href="/programs/${p.slug}/">${chip(ctx, p)}
+      <a class="card" href="/programs/${p.slug}/"${ctx.accentStyle(p)}>${chip(ctx, p)}
         <h3>${esc(p.title)}</h3>
         <p>${esc(p.card)}</p>
         <span class="card-more">Learn more →</span>
@@ -101,7 +103,7 @@ export function home({ ctx, identity, cardPrograms, upcoming, littleStewards, do
 
 <section class="band band-green">
   <div class="band-inner narrow center">
-    <h2>Upcoming at Ibrahim Center</h2>
+    <h2>Upcoming at Ibrahim Center</h2>${ORNAMENT}
     ${upcoming.length ? `<div class="event-list">${upcoming.map(e => `
       <a class="event-row" href="/events/">
         <span class="event-date">${esc(e.facts.date)}</span>
@@ -130,7 +132,7 @@ ${littleStewards ? `
 ${donate ? `
 <section class="band band-cream">
   <div class="band-inner narrow center">${chip(ctx, donate)}
-    <h2>Help Sustain a Home for Faith and Community</h2>
+    <h2>Help Sustain a Home for Faith and Community</h2>${ORNAMENT}
     <p>${esc(donate.card)} Every gift helps us create a lasting home where individuals and families can grow in faith, companionship, and service.</p>
     <p><a class="btn btn-primary btn-lg" href="/donate/">Donate Now</a></p>
   </div>
@@ -171,7 +173,7 @@ ${story ? `<section class="band band-cream"><div class="band-inner narrow">${chi
   <h2>Our Story</h2><p class="lede">${esc(story.card)}</p>
 </div></section>` : ""}
 <section class="band"><div class="band-inner">
-  <h2 class="center">Leadership & Team</h2>
+  <h2 class="center">Leadership & Team</h2>${ORNAMENT}
   <div class="people-grid">
     ${people.map(p => `
     <div class="person">${chip(ctx, p)}
@@ -190,7 +192,7 @@ export function programsIndex({ ctx, programs }) {
 <section class="band"><div class="band-inner">
   <div class="card-grid">
     ${programs.map(p => `
-    <a class="card" href="/programs/${p.slug}/">${chip(ctx, p)}
+    <a class="card" href="/programs/${p.slug}/"${ctx.accentStyle(p)}>${chip(ctx, p)}
       <h3>${esc(p.title)}</h3>
       <p>${esc(p.card ?? "Details coming soon.")}</p>
       ${p.facts?.schedule ? `<p class="card-fact">${esc(p.facts.schedule)}</p>` : ""}
@@ -203,11 +205,12 @@ export function programsIndex({ ctx, programs }) {
 export function program({ ctx, p, hero = false }) {
   if (!p) return placeholder("This program");
   const f = p.facts ?? {};
+  const acc = ctx.accentStyle(p);
   const factRows = [["Schedule", f.schedule], ["Audience", f.audience], ["Registration", typeof f.registration === "string" ? f.registration : null]]
     .filter(([, v]) => v);
   return `
-<section class="page-head"><div class="band-inner"><p class="kicker">${hero ? "Children & Families" : "Programs"}</p><h1>${esc(p.title)}</h1></div></section>
-<section class="band band-tight"><div class="band-inner narrow">${chip(ctx, p)}
+<section class="page-head accented"${acc}><div class="band-inner"><p class="kicker">${hero ? "Children & Families" : "Programs"}</p><h1>${esc(p.title)}</h1></div></section>
+<section class="band band-tight"${acc}><div class="band-inner narrow">${chip(ctx, p)}
   ${factRows.length ? `<div class="fact-strip">${factRows.map(([k, v]) => `<div><span class="fact-label">${k}</span><span>${esc(v)}</span></div>`).join("")}</div>` : ""}
   <article class="prose">${ctx.md(p.body.replace(/^# .*$/m, ""))}</article>
   ${p.links?.registration ? `<p><a class="btn btn-primary" href="${esc(p.links.registration)}">Register</a></p>` : ""}

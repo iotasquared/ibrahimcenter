@@ -2,6 +2,7 @@
 slug: jumuah
 title: Friday Prayer & Community (Jumu'ah)
 layer: program
+accent: "#1d4033"
 lifecycle: active
 status: draft
 owner: aj

@@ -2,6 +2,7 @@
 slug: coffee-shop
 title: The Coffee Shop
 layer: program
+accent: "#6f4a2f"
 lifecycle: active
 status: draft
 owner: amna
@@ -20,7 +21,7 @@ card: >-
   introduce yourself, or slow down over a cup of coffee in the company of the
   community.
 verify:
-  - "Official coffee shop name?"
+  - "Official coffee shop name? ('Rumi Cafe Cart' appears in a Sisters' Caravan Ramadan schedule on IG — candidate)"
   - "Hours beyond Friday?"
   - "Offerings + payment details (coffee/tea/food; cash/card)?"
 links: {}

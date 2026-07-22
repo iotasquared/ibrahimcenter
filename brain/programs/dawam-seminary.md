@@ -2,6 +2,7 @@
 slug: dawam-seminary
 title: Dawām Seminary for Islamic Studies
 layer: program
+accent: "#3a3527"
 lifecycle: active
 status: draft
 owner: aj
