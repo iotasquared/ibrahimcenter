@@ -14,6 +14,7 @@ facts:
   roles:
     - { title: "Executive Director", from: null, to: null }
   email: "Amna@ibrahimcenter.org"
+  photo: "/assets/photos/amna-mulla.webp (recovered from old site)"
   background: "Native Houstonian; UH supply chain mgmt + info systems; SF consulting → tech startups; served at Ta'leef (convert care); founded Ruh Karima women's art collective (2018, on pause); built Little Stewards (née Suhba Camp); led largest Ramadan fundraiser"
   tenure_community: "5 years (as of workbook, 2026)"
 card: >-

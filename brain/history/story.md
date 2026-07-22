@@ -11,9 +11,11 @@ spiritual_review: null
 last_verified: null
 review: annual
 facts:
-  founded_year: null
-  founded_by: "Converts (approved general description pending founder interviews)"
-  third_ward: "20+ years as a cornerstone within Houston's Third Ward"
+  founded_year: "2012 (old-site Why page: 'In the spring of 2012, a group of Houston Muslims (mostly African American converts) decided to get intentional about building community') — CONFLICTS with workbook's 'over 20 years'; needs Amna ruling"
+  founded_by: "A group of Houston Muslims, mostly African American converts (old-site wording)"
+  founding_intent: "'We wanted an intentional community, rather than a transactional space… welcoming, safe and authentic… a Prophetic community rooted in grace, love and service to humanity.'"
+  name_origin: "Old-site 'Who is Ibrahim?': a prophet in the Qur'an — Abraham in the Jewish and Christian traditions — who 'went through harsh struggle to arrive at a model of faith that worked for him and was subsequently pleasing to God.'"
+  third_ward: "Workbook claims 20+ years as a Third Ward cornerstone (unverified; see founded_year conflict)"
   new_campus: "618 Baca Street — the move, growth, and future vision to be told"
   move_timeline:
     last_jumuah_old_campus: "2026-04-24 — 7563 South Fwy, Houston TX 77021"
@@ -24,7 +26,8 @@ card: >-
   Founded by converts who sought not simply a place to pray, but a community in
   which Islam could be learned, lived, and loved.
 verify:
-  - "Founding year; founders (names or approved description); why it began; early gatherings; how convert founding shaped the center; why the name 'Ibrahim'; Third Ward relationship; new-campus story (workbook §5.2 — all interview questions open)"
+  - "RESOLVE: founded spring 2012 (old site) vs 'over 20 years' (workbook draft, used on About/homepage) — one of these is wrong on the public record"
+  - "Founding year; founders (names or approved description); why it began; early gatherings; how convert founding shaped the center; Third Ward relationship; new-campus story (workbook §5.2 — interview questions open; name-origin + intent now seeded from old site)"
   - "Founder interviews complete; documentary reviewed; dates verified; historical photos gathered; founders approve story"
 links:
   documentary: null

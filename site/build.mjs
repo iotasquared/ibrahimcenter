@@ -140,6 +140,7 @@ for (const [, from, to] of redirects) {
 rmSync(DIST, { recursive: true, force: true });
 mkdirSync(DIST, { recursive: true });
 cpSync(join(SITE, "theme.css"), join(DIST, "theme.css"));
+cpSync(join(ROOT, "assets"), join(DIST, "assets"), { recursive: true });
 for (const p of pages) {
   const out = join(DIST, p.path);
   mkdirSync(dirname(out), { recursive: true });

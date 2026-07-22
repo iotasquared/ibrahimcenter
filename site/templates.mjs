@@ -21,13 +21,13 @@ export function shell({ ctx, title, content, path }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <link rel="stylesheet" href="${base}/theme.css">
+<link rel="icon" href="/assets/brand/favicon.jpg">
 </head>
 <body>
 ${ctx.staging ? `<div class="staging-ribbon">Staging preview — unapproved draft content. Not the public site.</div>` : ""}
 <header class="site-header">
   <a class="brand" href="/">
-    <svg class="brand-mark" aria-hidden="true" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18.5" stroke="var(--ink)" stroke-width="1.6"/><circle cx="20" cy="20" r="15.5" stroke="var(--gold)" stroke-width="1"/><rect x="9.6" y="9.6" width="20.8" height="20.8" stroke="var(--gold)" stroke-width="1.6"/><rect x="9.6" y="9.6" width="20.8" height="20.8" stroke="var(--gold)" stroke-width="1.6" transform="rotate(45 20 20)"/></svg>
-    <span class="brand-text"><strong>Ibrahim</strong> Islamic Center</span>
+    <img class="brand-logo" src="/assets/brand/logo-dark.svg" alt="Ibrahim Islamic Center">
   </a>
   <details class="nav-toggle">
     <summary aria-label="Menu">Menu</summary>
@@ -43,7 +43,7 @@ ${ctx.staging ? `<div class="staging-ribbon">Staging preview — unapproved draf
 <footer class="site-footer">
   <div class="foot-grid">
     <div>
-      <p class="foot-brand"><strong>Ibrahim</strong> Islamic Center</p>
+      <img class="foot-logo" src="/assets/brand/logo-white.svg" alt="Ibrahim Islamic Center">
       <p>618 Baca Street<br>Houston, Texas 77013</p>
       <p><a href="https://maps.app.goo.gl/fRu73iZz8FbvHkry9">Directions</a></p>
     </div>
@@ -177,7 +177,8 @@ ${story ? `<section class="band band-cream"><div class="band-inner narrow">${chi
   <div class="people-grid">
     ${people.map(p => `
     <div class="person">${chip(ctx, p)}
-      <div class="person-photo" aria-hidden="true"><span>${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span></div>
+      ${p.facts?.photo ? `<div class="person-photo"><img src="${esc(String(p.facts.photo).split(" ")[0])}" alt="${esc(p.title)}"></div>`
+        : `<div class="person-photo" aria-hidden="true"><span>${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span></div>`}
       <h3>${esc(p.title)}</h3>
       <p class="person-role">${esc(p.facts?.roles?.[0]?.title ?? "")}</p>
       <p class="person-bio">${esc(p.card ?? "")}</p>

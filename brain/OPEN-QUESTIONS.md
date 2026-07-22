@@ -4,7 +4,7 @@
 
 ## Blocks launch (must clear before 8/1)
 
-- [ ] **Legal name + EIN + tax-deductibility statement** (donate page cannot ship without) — finance
+- [ ] **EIN** (donate page cannot ship without; legal name + tax statement RECOVERED from old site: "Ibrahim Center dba Ibrahim Islamic Center, IRS 501(c)(3), tax deductible and zakat eligible" — confirm current) — finance
 - [ ] **Stripe account ready** — donation link/embed live and tested — Dan
 - [ ] **Form routing owners**: every lane in `governance/form-routing.md` needs owner + email + response expectation (general, new Muslim, children, volunteer, donor, Shaykh meeting, spiritual care) — Amna
 - [ ] **Final navigation confirmed** (proposed: Home, Visit, About, Programs, Events, Little Stewards, New to Islam, Get Connected, Donate) — Amna
@@ -68,6 +68,17 @@
 - [ ] Events: first three real events (title/date/description/image/registration) — Amna
 - [ ] Google Calendar: publish/subscribe decision (§8.1) — Amna
 - [ ] Daily prayer times on site: yes/no (workbook only ever mentions Jumu'ah — intentional?) — Amna/Shaykh Khalis
+
+## Surfaced by the old-site mine (2026-07-22)
+
+- [ ] **Founding year: spring 2012 (old site) vs "over 20 years" (workbook/About draft)** — one is wrong on the public record; Amna rules — Amna
+- [ ] Meleekah title: old site + her bio say Administrative Director; workbook field says Community Care Director — confirm the rename — Amna
+- [ ] Shaykh bio: include MBA/CPA + Dawām Research & Ethical Advisory + Rashaad & Associates from old-site bio? — Shaykh Khalis/A.J.
+- [ ] Umrah: entity created from old-site page (`programs/umrah.md`, Nov 21–28 2026, Zeffy registration) — confirm nav placement + whether registration moves to Stripe this cycle — A.J.
+- [ ] Old giving categories (One-Time/Sustaining/Zakatul Fitr/Zakatul Maal on Gumroad!) — carry the fitr/maal split into Stripe products? — finance
+- [ ] "Hear From The Community" testimonials existed on old Give page — recover videos/quotes + permissions? — Amna
+- [ ] Twitter account (twitter.com/ibrahimcenter) — keep in footer? (workbook only lists IG/FB/YouTube/WhatsApp) — Amna
+- [ ] identify assets/photos/event-2026-06.webp before any use — Amna
 
 ## Surfaced by the IG deep-dive (2026-07-22, not in workbook)
 

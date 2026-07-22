@@ -18,13 +18,16 @@ facts:
   teaching_years: "30+"
   ijazat: [jurisprudence, hadith, theology, spirituality]
   studies: "Advanced doctoral research in Islamic jurisprudence (applied Islamic law)"
-  photo: "on current website — retrieve original file"
+  credentials_old_site: "MBA, CPA (old-site bio; verify inclusion in new bio)"
+  other_ventures_old_site: "Founder, Dawām Research & Ethical Advisory (Islamic law/finance/governance/philanthropy/estate-planning consultation); Founder & Principal, Rashaad & Associates (accounting + financial advisory)"
+  photo: "/assets/photos/khalis-rashaad-portrait.webp (recovered from old site)"
 card: >-
   Shaykh Khalis Rashaad serves as Imam and Resident Scholar of Ibrahim Center,
   teaching sacred knowledge and cultivating a community rooted in faith,
   companionship, and service.
 verify:
   - "Bio approved by Shaykh Khalis; owner per workbook = aj@ibrahimcenter.org"
+  - "Include old-site additions (MBA/CPA; Dawām Research & Ethical Advisory; Rashaad & Associates) in the new public bio?"
   - "Ihsan Hub approved description + URL"
   - "High-res photo file obtained"
 links:

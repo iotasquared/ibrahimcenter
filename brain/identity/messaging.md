@@ -13,6 +13,12 @@ review: annual
 facts:
   tagline_current_site: "love. service. friendship."
   tagline_ig_and_campus_sign: "A community built on love and service, presence, sacred knowledge, and the radiant legacy of our Prophet ﷺ."
+  mission_line_old_site: "Ibrahim Islamic Center provides space to connect people through fellowship, learning, and spiritual cultivation rooted in love and service."
+  old_why_headline: "It's Simple. We Need Each Other"
+  socials:
+    instagram: "https://www.instagram.com/ibrahimcenter/"
+    twitter: "https://twitter.com/ibrahimcenter"
+    facebook: "https://www.facebook.com/Ibrahimislamiccenter/"
 card: >-
   The approved sitewide copy blocks — hero, welcome, section headings, CTAs —
   that pages compose from.

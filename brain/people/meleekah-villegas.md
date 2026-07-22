@@ -11,9 +11,11 @@ spiritual_review: null
 last_verified: null
 review: annual
 facts:
+  full_name: "Melanie Meleekah Villegas (per old-site About page)"
   roles:
-    - { title: "Community Care Director (TITLE CONFLICT — bio says Administrative Director)", from: null, to: null }
+    - { title: "Community Care Director (TITLE CONFLICT — bio + old site say Administrative Director; likely mid-rename)", from: null, to: null }
   email: "Meleekah@Ibrahimcenter.org"
+  photo: "/assets/photos/meleekah-villegas.webp (recovered from old site)"
 card: >-
   Meleekah is a Tejana activist, community researcher, and artist working on
   health, wellness, and community development in Houston's Third Ward.
