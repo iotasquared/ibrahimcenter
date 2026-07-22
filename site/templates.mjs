@@ -12,15 +12,14 @@ export const chip = (ctx, e, label = "Draft — pending approval") =>
   ctx.draft(e) ? `<span class="draft-chip" title="Renders on staging only until approved">${label}</span>` : "";
 
 export function shell({ ctx, title, content, path }) {
-  const depth = path.split("/").length - 1;
-  const base = depth === 0 ? "." : Array(depth).fill("..").join("/");
-  return `<!doctype html>
+  const doc = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
-<link rel="stylesheet" href="${base}/theme.css">
+${ctx.staging ? '<meta name="robots" content="noindex, nofollow">' : ""}
+<link rel="stylesheet" href="/theme.css">
 <link rel="icon" href="/assets/brand/favicon.jpg">
 </head>
 <body>
@@ -60,6 +59,10 @@ ${ctx.staging ? `<div class="staging-ribbon">Staging preview — unapproved draf
 </footer>
 </body>
 </html>`;
+  // Host-agnostic: prefix every root-absolute internal link/asset with the mount base
+  // (empty locally + on a custom domain; "/ibrahimcenter" for the GitHub Pages project site).
+  // External URLs (http/mailto/#) don't start with "/" so they're untouched.
+  return ctx.base ? doc.replaceAll('href="/', `href="${ctx.base}/`).replaceAll('src="/', `src="${ctx.base}/`) : doc;
 }
 
 export function home({ ctx, identity, cardPrograms, upcoming, littleStewards, donate }) {

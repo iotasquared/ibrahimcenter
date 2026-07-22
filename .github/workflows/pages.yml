@@ -26,8 +26,9 @@ jobs:
           node-version: 22
       - run: npm ci
       # STAGING build while content approvals are pending (everything is status: draft).
-      # Flip to `node site/build.mjs` for the production launch build.
-      - run: node site/build.mjs --staging
+      # SITE_BASE mounts the site under the project-pages subpath; drop it for a custom domain.
+      # Flip to `node site/build.mjs` (no --staging) for the production launch build.
+      - run: SITE_BASE=/ibrahimcenter node site/build.mjs --staging
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/dist

@@ -15,6 +15,8 @@ const ROOT = join(SITE, "..");
 const BRAIN = join(ROOT, "brain");
 const DIST = join(SITE, "dist");
 const STAGING = process.argv.includes("--staging");
+// Mount base: "" for local preview + custom-domain root; "/ibrahimcenter" for the Pages project site.
+const BASE = (process.env.SITE_BASE ?? "").replace(/\/+$/, "");
 
 // ---------- load entities ----------
 function loadEntity(path) {
@@ -78,6 +80,7 @@ export const ctx = {
   md,
   draft,
   accentStyle,
+  base: BASE,
   today: new Date().toISOString().slice(0, 10),
 };
 
@@ -133,14 +136,18 @@ const redirects = readFileSync(join(BRAIN, "REDIRECTS.md"), "utf8")
   .split("\n").map(l => l.match(/^\|\s*([\w-]+)\s*\|\s*([\w-]+)\s*\|/)).filter(Boolean)
   .filter(m => m[1] !== "old slug" && m[1] !== "---" && m[1] !== "—");
 for (const [, from, to] of redirects) {
-  page(`programs/${from}/index.html`, "Redirect", T.redirect(`/programs/${to}/`));
+  page(`programs/${from}/index.html`, "Redirect", T.redirect(`${BASE}/programs/${to}/`));
 }
 
 // ---------- emit ----------
 rmSync(DIST, { recursive: true, force: true });
 mkdirSync(DIST, { recursive: true });
-cpSync(join(SITE, "theme.css"), join(DIST, "theme.css"));
+let css = readFileSync(join(SITE, "theme.css"), "utf8");
+if (BASE) css = css.replaceAll("url('/", `url('${BASE}/`);   // rewrite the hero background asset path
+writeFileSync(join(DIST, "theme.css"), css);
 cpSync(join(ROOT, "assets"), join(DIST, "assets"), { recursive: true });
+writeFileSync(join(DIST, ".nojekyll"), "");                  // serve dist as-is, no Jekyll pass
+if (STAGING) writeFileSync(join(DIST, "robots.txt"), "User-agent: *\nDisallow: /\n");
 for (const p of pages) {
   const out = join(DIST, p.path);
   mkdirSync(dirname(out), { recursive: true });
