@@ -13,7 +13,8 @@ import * as T from "./templates.mjs";
 const SITE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(SITE, "..");
 const BRAIN = join(ROOT, "brain");
-const DIST = join(SITE, "dist");
+// Output dir: local preview → site/dist (gitignored); OUT_DIR=docs → committed for branch-Pages.
+const DIST = process.env.OUT_DIR ? join(ROOT, process.env.OUT_DIR) : join(SITE, "dist");
 const STAGING = process.argv.includes("--staging");
 // Mount base: "" for local preview + custom-domain root; "/ibrahimcenter" for the Pages project site.
 const BASE = (process.env.SITE_BASE ?? "").replace(/\/+$/, "");
@@ -153,7 +154,7 @@ for (const p of pages) {
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, T.shell({ ctx, title: p.title, content: p.html, path: p.path }));
 }
-console.log(`${STAGING ? "STAGING" : "PRODUCTION"} build: ${pages.length} pages → site/dist/`);
+console.log(`${STAGING ? "STAGING" : "PRODUCTION"} build: ${pages.length} pages → ${process.env.OUT_DIR ?? "site/dist"}/${BASE ? ` (base ${BASE})` : ""}`);
 if (!STAGING) {
   const drafts = [...brain.programs, ...brain.people, ...Object.values(brain.identity)].filter(e => e && e.status !== "approved").length;
   console.log(`note: ${drafts} draft entities excluded by the approval law.`);
