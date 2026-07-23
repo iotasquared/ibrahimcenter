@@ -15,16 +15,17 @@ facts:
   short_name: Ibrahim Center
   abbreviation: IIC
   city: Houston, Texas
-  age: 20+ years (verify exact)
-  founded_by: converts
+  founded_year: 2012 (confirmed by A.J., 2026-07-23)
+  founded_by: "A group of Houston Muslims, mostly African American converts"
+  third_ward: "Roots and history (confirmed A.J.); the new campus is its own neighborhood"
 card: >-
   Rooted in traditional Islam, Ibrahim Islamic Center is a welcoming Houston
   community where individuals and families worship, learn, serve, and grow
   closer to God through sacred companionship, love, and service.
 verify:
-  - "'Over 20 years' claim verified against founding year?"
-  - "Official legal name for footer/donations (vs. 'Ibrahim Islamic Center')?"
+  - "Name of the new campus's neighborhood (618 Baca, 77013 — NE Houston, not Third Ward) — A.J. to supply the wording they want"
   - "Mission statement approved by leadership and board?"
+  - "Vision statement (drafted below in house voice) — read + correct; leadership/board approval"
 links: {}
 ---
 
@@ -32,10 +33,14 @@ links: {}
 
 Rooted in traditional Islam, Ibrahim Islamic Center serves as a nurturing space for fellowship, learning, and spiritual growth for the greater Houston community. Our mission is to unite people through love and service, cultivating a diverse and intentional community of Muslims.
 
-For over 20 years, Ibrahim Islamic Center has been a cornerstone within Houston's Third Ward, offering a welcoming space for Muslims and non-Muslims alike. Through worship, education, service, and community life, we aim to empower a thoughtful generation of Muslims who embody faith with beauty, sincerity, and relevance in their contemporary context.
+Our roots are in Houston's Third Ward, where a small group of believers first gathered to build an intentional community of faith. Today we carry that spirit into our new home, offering a welcoming space for Muslims and non-Muslims alike. Through worship, education, service, and community life, we aim to empower a thoughtful generation of Muslims who embody faith with beauty, sincerity, and relevance in their contemporary context.
 
 Our strength lies in our diversity. We are a community that embraces people across backgrounds, generations, and stages of faith, nurturing meaningful connection and collective growth.
 
-## Vision (to be written — workbook §7.1 blank)
+## Vision
 
-Owner to supply: the long-term community IIC is cultivating; what IIC should become for families, converts, youth, elders, and seekers; how IIC carries traditional Islam into contemporary American life; what kind of Muslims and community members IIC hopes to form.
+*Draft in the house voice — read and correct. Religious/board review pending.*
+
+We envision a Houston where anyone can walk into a masjid and find not only a place to pray, but a family. Where faith is learned in the company of others, children grow up loving God and His Messenger ﷺ, and the door stands open to the newcomer, the seeker, the convert, and the lifelong Muslim alike.
+
+We are building a community rooted in traditional Islam and fluent in contemporary American life — one that carries sacred knowledge with beauty, meets hardship with service, and turns strangers into companions. Our hope is to help raise a generation of Muslims who are grounded in their faith, generous with their time, and at home in both their tradition and their city.

@@ -2,25 +2,29 @@
 
 > Every unfilled or unverified item from the July 2026 workbook, grouped by who can answer it. This list shrinking to zero ≈ the site being fully approvable. Ask the AI to record answers — one message per batch is fine; it will route them into the entity files and check items off here.
 
+> **A.J. is point on the site as of 2026-07-23.** Answered that day (folded in): founding year **2012**; Third Ward = **roots/history**, new campus = its own neighborhood; Meleekah = **Community Care Director**; coffee shop **unnamed**; Little/Young Stewards hierarchy **correct**; nav **fine** + **Umrah added as its own page**; **Family Majlis on hold** pending board; giving keeps the **four categories** (One-Time/Sustaining/Zakat al-Fitr/Zakat al-Maal); Shaykh Khalis bio **stays Center-focused**. Vision, Values, Culture, Community Commitments, Our Story, and New to Islam **now drafted** in the house voice — awaiting read + correct (and Shaykh Khalis for religious items).
+
 ## Blocks launch (must clear before 8/1)
 
-- [ ] **EIN** (donate page cannot ship without; legal name + tax statement RECOVERED from old site: "Ibrahim Center dba Ibrahim Islamic Center, IRS 501(c)(3), tax deductible and zakat eligible" — confirm current) — finance
+- [ ] **EIN** — the tax-ID number itself (legal name + "501(c)(3), tax-deductible + zakat-eligible" already recovered; A.J. kept the four giving categories) — finance/A.J.
 - [ ] **Stripe account ready** — donation link/embed live and tested — Dan
-- [ ] **Form routing owners**: every lane in `governance/form-routing.md` needs owner + email + response expectation (general, new Muslim, children, volunteer, donor, Shaykh meeting, spiritual care) — Amna
-- [ ] **Final navigation confirmed** (proposed: Home, Visit, About, Programs, Events, Little Stewards, New to Islam, Get Connected, Donate) — Amna
-- [ ] **Hero**: headline/subheadline final approval + hero image (people, not building) — Amna
+- [ ] **Form routing owners**: every lane in `governance/form-routing.md` needs owner + email + response expectation (general, new Muslim, children, volunteer, donor, Shaykh meeting, spiritual care) — A.J.
+- [x] **Navigation confirmed** — fine for now + Umrah added (A.J. 07-23)
+- [ ] **Hero**: headline/subheadline final approval + hero image (currently the old-site teaching photo) — A.J.
 - [ ] **Jumu'ah time 1:30 PM verified** + recommended arrival — A.J.
-- [ ] **Hero CTA tension resolved**: §1.1 says RSVP-to-event is the #1 visitor action; hero buttons are Donate + Get Connected — Amna
-- [ ] **Meleekah's title**: Community Care Director vs Administrative Director — Amna/Meleekah
-- [ ] **Little Stewards vs Young Stewards naming hierarchy** on homepage — Amna/Fatima
-- [ ] **Asset folder + minimum photo set** (hero, one per program, staff portraits) with consent rows in `media/manifest.md` — Amna
+- [ ] **Hero CTA priority**: §1.1 says RSVP-to-event is the #1 visitor action; hero buttons are Donate + Get Connected — A.J.
+- [x] **Meleekah's title** = Community Care Director (A.J. 07-23)
+- [x] **Little Stewards / Young Stewards hierarchy** confirmed correct (A.J. 07-23)
+- [ ] **New neighborhood name** for the 618 Baca campus (77013, NE Houston — not Third Ward) — A.J.
+- [ ] **Read + correct the new drafts**: Vision, Values (4), Culture, Community Commitments, Our Story, New to Islam — A.J. + Shaykh Khalis (religious)
+- [ ] **Asset folder + minimum photo set** (hero, one per program, staff portraits) with consent rows in `media/manifest.md` — A.J.
 - [ ] **Footer**: contact email/phone, office hours, social URLs (IG/FB/YouTube/WhatsApp), copyright wording — A.J.
 
 ## Programs (content blank in workbook)
 
 - [ ] **Thursday class — everything** (§6.4: name, time, teacher, topic, audience, childcare, cost, description) — owner TBD
 - [ ] **Young Stewards Sunday School — everything** (§6.8/§9.5: ages, schedule, tuition, curriculum, teachers, registration, policies, safety, drop-off) — Fatima
-- [ ] Coffee shop: official name, non-Friday hours, offerings/payment — Amna
+- [ ] Coffee shop: non-Friday hours, offerings/payment (name: intentionally unnamed for now, A.J. 07-23) — Amna
 - [ ] Menaissance: frequency (first Sunday?), registration link — A.J.
 - [ ] Sisters Caravan: facilitator, registration link — Amna
 - [ ] Special events: recurring list approved, public-vs-member clarity, announcement channels — Amna
@@ -82,8 +86,8 @@
 
 ## Surfaced by the IG deep-dive (2026-07-22, not in workbook)
 
-- [ ] **Family Majlis** ("a monthly pulse of heart & soul") — still running? Belongs on Programs? — Amna
-- [ ] **Umrah trip** (Nov 21–28, 2026, led by Shaykh Khalis) — does it get a page/program entry? (Old site had an Umrah page) — A.J.
+- [x] **Family Majlis** — ON HOLD pending board decision on whether to continue the program; not on the site for now (A.J. 07-23)
+- [x] **Umrah trip** — added as its own page in the nav (A.J. 07-23); still: Zeffy vs Stripe for registration this cycle
 - [ ] Scholar-speaker series (Ubaydullah Evans etc.) — a recurring program or events-only? — A.J.
 - [ ] "Rumi Cafe Cart" = the coffee shop's real name? — Amna
 - [ ] Brand files: logo vectors, fonts, brand guide; palette hexes approved vs. my by-eye harvest (`identity/design-language.md`) — Amna

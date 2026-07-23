@@ -27,7 +27,7 @@ card: >-
   companionship, and service.
 verify:
   - "Bio approved by Shaykh Khalis; owner per workbook = aj@ibrahimcenter.org"
-  - "Include old-site additions (MBA/CPA; Dawām Research & Ethical Advisory; Rashaad & Associates) in the new public bio?"
+  - "DECIDED (A.J., 2026-07-23): keep the published bio focused on his role at the Center — MBA/CPA + outside firms retained as metadata only, NOT in the public bio"
   - "Ihsan Hub approved description + URL"
   - "High-res photo file obtained"
 links:

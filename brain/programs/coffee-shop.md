@@ -21,7 +21,7 @@ card: >-
   introduce yourself, or slow down over a cup of coffee in the company of the
   community.
 verify:
-  - "Official coffee shop name? ('Rumi Cafe Cart' appears in a Sisters' Caravan Ramadan schedule on IG — candidate)"
+  - "Coffee shop is unnamed for now (confirmed A.J., 2026-07-23) — revisit if it gets an official name"
   - "Hours beyond Friday?"
   - "Offerings + payment details (coffee/tea/food; cash/card)?"
 links: {}

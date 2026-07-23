@@ -25,7 +25,7 @@ card: >-
   Rashaad — prayer in the two holy sanctuaries, guided visits, and Umrah
   performed with instruction and companionship.
 verify:
-  - "Program was LIVE on the old site + pinned on IG but absent from the workbook's nav — confirm placement (program page vs event)"
+  - "Own page in main nav (CONFIRMED A.J., 2026-07-23)"
   - "Registration currently on Zeffy — migrate to Stripe per D5, or keep Zeffy for this cycle?"
   - "Pricing/dates current as of old-site capture 2026-07-22"
 links:

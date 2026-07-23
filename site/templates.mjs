@@ -5,8 +5,12 @@ const ORNAMENT = `<div class="ornament" aria-hidden="true"><svg viewBox="0 0 120
 
 const NAV = [
   ["/", "Home"], ["/visit/", "Visit"], ["/about/", "About"], ["/programs/", "Programs"],
-  ["/events/", "Events"], ["/little-stewards/", "Little Stewards"], ["/new-to-islam/", "New to Islam"],
+  ["/events/", "Events"], ["/little-stewards/", "Little Stewards"], ["/programs/umrah/", "Umrah"], ["/new-to-islam/", "New to Islam"],
 ];
+
+// Render an entity body as prose, dropping the in-repo "*Draft — read and correct*" notes
+// so the review page reads as the copy will read, while the disclaimers stay in the source.
+const bodyMd = (ctx, s) => ctx.md((s || "").replace(/^\*Draft[^\n]*$/gm, "").replace(/^# .*$/m, "").trim());
 
 export const chip = (ctx, e, label = "Draft — pending approval") =>
   ctx.draft(e) ? `<span class="draft-chip" title="Renders on staging only until approved">${label}</span>` : "";
@@ -170,12 +174,16 @@ export function about({ ctx, mission, story, people, values }) {
   return `
 <section class="page-head"><div class="band-inner"><p class="kicker">About</p><h1>Rooted in Traditional Islam</h1></div></section>
 ${mission ? `<section class="band band-tight"><div class="band-inner narrow">${chip(ctx, mission)}
-  <article class="prose">${ctx.md(mission.body.replace(/^# Mission$/m, "").replace(/## Vision[\s\S]*$/m, ""))}</article>
+  <article class="prose">${bodyMd(ctx, mission.body.replace(/^# Mission$/m, ""))}</article>
 </div></section>` : ""}
 ${story ? `<section class="band band-cream"><div class="band-inner narrow">${chip(ctx, story)}
-  <h2>Our Story</h2><p class="lede">${esc(story.card)}</p>
+  <h2>Our Story</h2>${ORNAMENT}
+  <article class="prose">${bodyMd(ctx, story.body)}</article>
 </div></section>` : ""}
-<section class="band"><div class="band-inner">
+${values ? `<section class="band"><div class="band-inner narrow">${chip(ctx, values)}
+  <article class="prose">${bodyMd(ctx, values.body)}</article>
+</div></section>` : ""}
+<section class="band band-cream"><div class="band-inner">
   <h2 class="center">Leadership & Team</h2>${ORNAMENT}
   <div class="people-grid">
     ${people.map(p => `
@@ -236,15 +244,15 @@ export function events({ ctx, upcoming, past }) {
 }
 
 export function newToIslam({ ctx, e }) {
+  if (!e) return placeholder("New to Islam");
+  const support = e.facts?.support_offered ?? [];
   return `
 <section class="page-head"><div class="band-inner"><p class="kicker">New to Islam</p><h1>Questions Are Welcome Here</h1></div></section>
-<section class="band band-tight"><div class="band-inner narrow">${e ? chip(ctx, e) : ""}
-  <p class="lede">Whether you are exploring Islam, have recently embraced it, or love someone who has — you are welcome at Ibrahim Center. No prior knowledge is assumed, and no question is too small.</p>
-  <p>Ibrahim Center was founded by converts. Walking with people at the beginning of their journey is not a side program here — it is part of who we are.</p>
-  <div class="support-grid">
-    ${["An introductory conversation", "Support taking the shahada", "Foundations classes", "Mentorship & companionship", "A warm introduction to the community", "Spiritual care"].map(s => `<div class="support-item">${s}</div>`).join("")}
-  </div>
-  <p>The simplest first step: <a class="text-link" href="/get-connected/">reach out</a>, or simply come visit on a Friday — <a class="text-link" href="/visit/">here's what to expect</a>.</p>
+<section class="band band-tight"><div class="band-inner narrow">${chip(ctx, e)}
+  <p class="lede">${esc(e.card)}</p>
+  <article class="prose">${bodyMd(ctx, e.body)}</article>
+  ${support.length ? `<h2>Ways we can support you</h2>
+  <div class="support-grid">${support.map(s => `<div class="support-item">${esc(s)}</div>`).join("")}</div>` : ""}
 </div></section>`;
 }
 
