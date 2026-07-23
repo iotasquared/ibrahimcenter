@@ -6,8 +6,8 @@
 
 ## Blocks launch (must clear before 8/1)
 
-- [ ] **EIN** — the tax-ID number itself (legal name + "501(c)(3), tax-deductible + zakat-eligible" already recovered; A.J. kept the four giving categories) — finance/A.J.
-- [ ] **Stripe account ready** — donation link/embed live and tested — Dan
+- [x] **EIN 83-4550543** confirmed (A.J. from Amna, 07-23); now on the Donate page with the tax-deductible/zakat-eligible statement
+- [ ] **Stripe account ready** — donation link/embed live and tested; set up four products (One-Time, Sustaining, Zakat al-Fitr, Zakat al-Maal) — Dan
 - [ ] **Form routing owners**: every lane in `governance/form-routing.md` needs owner + email + response expectation (general, new Muslim, children, volunteer, donor, Shaykh meeting, spiritual care) — A.J.
 - [x] **Navigation confirmed** — fine for now + Umrah added (A.J. 07-23)
 - [ ] **Hero**: headline/subheadline final approval + hero image (currently the old-site teaching photo) — A.J.
@@ -15,7 +15,7 @@
 - [ ] **Hero CTA priority**: §1.1 says RSVP-to-event is the #1 visitor action; hero buttons are Donate + Get Connected — A.J.
 - [x] **Meleekah's title** = Community Care Director (A.J. 07-23)
 - [x] **Little Stewards / Young Stewards hierarchy** confirmed correct (A.J. 07-23)
-- [ ] **New neighborhood name** for the 618 Baca campus (77013, NE Houston — not Third Ward) — A.J.
+- [x] **New neighborhood** — intentionally NOT named/characterized (A.J. 07-23, strategic); copy uses "our new home" + street address only
 - [ ] **Read + correct the new drafts**: Vision, Values (4), Culture, Community Commitments, Our Story, New to Islam — A.J. + Shaykh Khalis (religious)
 - [ ] **Asset folder + minimum photo set** (hero, one per program, staff portraits) with consent rows in `media/manifest.md` — A.J.
 - [ ] **Footer**: contact email/phone, office hours, social URLs (IG/FB/YouTube/WhatsApp), copyright wording — A.J.

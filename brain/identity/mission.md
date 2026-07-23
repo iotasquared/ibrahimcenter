@@ -17,13 +17,13 @@ facts:
   city: Houston, Texas
   founded_year: 2012 (confirmed by A.J., 2026-07-23)
   founded_by: "A group of Houston Muslims, mostly African American converts"
-  third_ward: "Roots and history (confirmed A.J.); the new campus is its own neighborhood"
+  third_ward: "Roots and history (confirmed A.J.)"
+  new_campus_naming: "DECIDED (A.J., 2026-07-23): do NOT name or characterize the new neighborhood — strategic (avoid deterring visitors by reputation before they arrive). Public copy uses 'our new home' + the street address only. Do not add a neighborhood label."
 card: >-
   Rooted in traditional Islam, Ibrahim Islamic Center is a welcoming Houston
   community where individuals and families worship, learn, serve, and grow
   closer to God through sacred companionship, love, and service.
 verify:
-  - "Name of the new campus's neighborhood (618 Baca, 77013 — NE Houston, not Third Ward) — A.J. to supply the wording they want"
   - "Mission statement approved by leadership and board?"
   - "Vision statement (drafted below in house voice) — read + correct; leadership/board approval"
 links: {}

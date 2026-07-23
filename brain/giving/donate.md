@@ -12,10 +12,10 @@ last_verified: null
 review: quarterly
 facts:
   processor: "Stripe, embedded direct (decision D5 — replaces the workbook's Zeffy assumption)"
-  legal_name: "Ibrahim Center (dba Ibrahim Islamic Center) — per old-site Give page"
-  irs_status: "501(c)(3); donations tax deductible and zakat eligible (old-site wording)"
-  ein: null
-  tax_language: "Old-site version: 'Ibrahim Center dba Ibrahim Islamic Center is an IRS 501(c)(3) non profit organization. Your donations are tax deductible and zakat eligible.'"
+  legal_name: "Ibrahim Center (dba Ibrahim Islamic Center)"
+  irs_status: "501(c)(3); donations tax-deductible and zakat-eligible"
+  ein: "83-4550543"   # from Amna via A.J., 2026-07-23
+  tax_statement: "Ibrahim Center (dba Ibrahim Islamic Center) is a 501(c)(3) nonprofit organization. Your donations are tax-deductible and zakat-eligible. EIN 83-4550543."
   old_categories: [One Time Donation, Sustaining Donation (monthly emphasized), Zakatul Fitr, Zakatul Maal]
   old_rails: "Four Gumroad links + Zeffy campaign 'Ibrahim Center Ramadan Fundraiser 2026 — Caring for What We Plant' — ALL retire into Stripe"
   old_headline: "Support a Healthy Expression of Islam in America — values. visions. virtues."
@@ -24,8 +24,8 @@ card: >-
   Your support sustains sacred learning, children's formation, community
   gatherings, spiritual care, and the daily life of Ibrahim Center.
 verify:
-  - "EIN (legal name + tax statement recovered from old site; confirm current) — REQUIRED before donation page ships"
-  - "Keep the fitr/maal split as Stripe products? Old site distinguished One-Time / Sustaining / Zakatul Fitr / Zakatul Maal"
+  - "EIN 83-4550543 CONFIRMED (A.J., 2026-07-23). Legal name + tax statement set."
+  - "Stripe: set up the four products — One-Time, Sustaining, Zakat al-Fitr, Zakat al-Maal (A.J. kept the four categories) — Dan"
   - "Giving categories 1–5 and $25/$50/$100/$250/$500+ examples (workbook §4.2 blank; finance team approves)"
   - "Donor contact person; transparency link (annual report / governance)"
   - "Recurring gifts language; closing appeal (2–3 sentences)"

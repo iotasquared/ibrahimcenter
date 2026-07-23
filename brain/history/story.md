@@ -16,7 +16,7 @@ facts:
   founding_intent: "'We wanted an intentional community, rather than a transactional space… welcoming, safe and authentic… a Prophetic community rooted in grace, love and service to humanity.'"
   name_origin: "Old-site 'Who is Ibrahim?': a prophet in the Qur'an — Abraham in the Jewish and Christian traditions — who 'went through harsh struggle to arrive at a model of faith that worked for him and was subsequently pleasing to God.'"
   third_ward: "Roots and history (CONFIRMED by A.J.) — the community began in Third Ward; the new campus is described as its own neighborhood"
-  new_campus: "618 Baca Street (NE Houston) — moved spring 2026; new-neighborhood name TBD by A.J."
+  new_campus: "618 Baca Street — moved spring 2026. Do NOT name/characterize the neighborhood (A.J. decision) — 'new home' + street address only."
   move_timeline:
     last_jumuah_old_campus: "2026-04-24 — 7563 South Fwy, Houston TX 77021"
     first_jumuah_baca: "2026-05-01 — 618 Baca St"
@@ -27,7 +27,7 @@ card: >-
   which Islam could be learned, lived, and loved.
 verify:
   - "Story draft below reviewed + corrected by A.J./founders; founder names or approved general description"
-  - "New-neighborhood name for the 618 Baca campus"
+  - "Neighborhood: intentionally unnamed (A.J. 07-23) — keep 'new home' + address only"
   - "Documentary 'A Story of Hearts' URL + embed permission; historical photos gathered"
 links:
   documentary: null

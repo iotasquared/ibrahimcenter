@@ -274,6 +274,7 @@ export function donate({ ctx, donate, zakat }) {
   ${donate?.links?.stripe
     ? `<p><a class="btn btn-primary btn-lg" href="${esc(donate.links.stripe)}">Donate Now</a></p>`
     : `<p class="pending-note">Online giving is being finalized — to give today, please reach out at <a href="mailto:connect@ibrahimcenter.org">connect@ibrahimcenter.org</a>.</p>`}
+  ${donate?.facts?.tax_statement ? `<p class="muted legal-note">${esc(donate.facts.tax_statement)}</p>` : ""}
 </div></section>
 ${zakat ? `
 <section class="band band-cream"><div class="band-inner narrow">${chip(ctx, zakat)}
