@@ -13,7 +13,7 @@ last_verified: null
 review: quarterly
 facts:
   parent: little-stewards
-  schedule: "Sundays (details unconfirmed)"
+  schedule: "Sundays — details being confirmed"
   ages: null
   tuition: null
   teachers: null

@@ -12,7 +12,7 @@ spiritual_review: null
 last_verified: null
 review: quarterly
 facts:
-  schedule: "Monthly (current-site: first Sunday — verify)"
+  schedule: "Monthly"
   location: campus
   audience: "Brothers ages 18 and older"
   registration: "Via Events page and social media"

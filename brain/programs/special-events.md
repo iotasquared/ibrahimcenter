@@ -27,4 +27,6 @@ links: {}
 
 From guest scholars and community meals to seasonal gatherings and family programs, Ibrahim Center hosts special events throughout the year that bring faith and community life together.
 
-Recurring seasons and formats include Mawlid and Rabi al-Awwal gatherings, Ramadan programs, family nights, seasonal camps, and visiting scholars. Individual events live in `brain/events/` (append-only) and surface on the site automatically by date.
+Recurring seasons and formats include gatherings for Mawlid and Rabi al-Awwal — the month in which the Prophet ﷺ was born — along with Ramadan programs, family nights, seasonal camps, and visiting scholars.
+
+Upcoming gatherings are announced on our [events page](/events/) as they are scheduled.

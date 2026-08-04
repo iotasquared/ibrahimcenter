@@ -1,6 +1,6 @@
 ---
 slug: little-stewards
-title: Little Stewards (children's programming initiative)
+title: Little Stewards
 layer: program
 accent: "#37827b"
 lifecycle: active
@@ -37,14 +37,12 @@ links:
 
 Little Stewards is Ibrahim Islamic Center's children's programming initiative, designed to nurture young Muslims through faith, service, creativity, and joyful learning.
 
-Through Sunday school, seasonal camps, creative learning, and family programs, children develop Islamic knowledge, adab, friendship, and a meaningful sense of belonging.
+Through Sunday school, seasonal camps, creative learning, and family programs, children develop Islamic knowledge, adab — the sacred etiquette of how we carry ourselves and treat others — friendship, and a meaningful sense of belonging.
 
-## Current offerings (details per child program file / verify list)
+## Current offerings
 
-- Young Stewards Sunday School — see `young-stewards-sunday-school`
+- [Young Stewards Sunday School](/programs/young-stewards-sunday-school/)
 - Seasonal camps
-- Seerah Through Songs
-- Cooking + adab programs
+- Seerah Through Songs — the life of the Prophet ﷺ, taught through music
+- Cooking and adab programs
 - Family events
-
-Tone law for this program (workbook builder note): joyful and spiritually meaningful — never childcare advertising.

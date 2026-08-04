@@ -28,19 +28,18 @@ verify:
   - "Welcome contact person for first-time visitors (name/role/email)"
   - "What to Expect: Muslim visitor / non-Muslim visitor guidance (workbook §3.3 blank)"
   - "Clothing guidance (kind and practical) + women's space explanation"
+  - "Main entrance description — the pre-move note read 'will be on the side of the double doors', which is not usable directions; confirm which side of the building and rewrite"
 links:
   map: "https://maps.app.goo.gl/fRu73iZz8FbvHkry9"
 ---
 
 # Visit
 
-Whether you are joining us for prayer, attending a class, exploring Islam, or simply visiting your new neighborhood community center, you are welcome at Ibrahim Center. You do not need prior knowledge or experience to visit.
-
 ## Location & parking
 
 Ibrahim Center · 618 Baca Street, Houston, Texas 77013. Parking is available on-site and along surrounding neighborhood streets. Please be mindful of our neighbors and avoid blocking driveways or restricted areas.
 
-The main entrance is on the side of the double doors — volunteers can point you the rest of the way.
+Come in through the double doors — a volunteer will be nearby to point you the rest of the way.
 
 ## Restrooms & accessibility
 

@@ -13,7 +13,7 @@
 - [ ] **Hero**: headline/subheadline final approval + hero image (currently the old-site teaching photo) — A.J.
 - [ ] **Jumu'ah time 1:30 PM verified** + recommended arrival — A.J.
 - [ ] **Hero CTA priority**: §1.1 says RSVP-to-event is the #1 visitor action; hero buttons are Donate + Get Connected — A.J.
-- [x] **Meleekah's title** = Community Care Director (A.J. 07-23)
+- [x] **Meleekah's title** = **Community Care Coordinator** (A.J., 2026-08-03 — supersedes "Community Care Director", A.J. 07-23; she is no longer a director)
 - [x] **Little Stewards / Young Stewards hierarchy** confirmed correct (A.J. 07-23)
 - [x] **New neighborhood** — intentionally NOT named/characterized (A.J. 07-23, strategic); copy uses "our new home" + street address only
 - [ ] **Read + correct the new drafts**: Vision, Values (4), Culture, Community Commitments, Our Story, New to Islam — A.J. + Shaykh Khalis (religious)
@@ -76,7 +76,7 @@
 ## Surfaced by the old-site mine (2026-07-22)
 
 - [ ] **Founding year: spring 2012 (old site) vs "over 20 years" (workbook/About draft)** — one is wrong on the public record; Amna rules — Amna
-- [ ] Meleekah title: old site + her bio say Administrative Director; workbook field says Community Care Director — confirm the rename — Amna
+- [x] Meleekah title: old site said Administrative Director, workbook said Community Care Director — settled as **Community Care Coordinator** (A.J., 2026-08-03)
 - [ ] Shaykh bio: include MBA/CPA + Dawām Research & Ethical Advisory + Rashaad & Associates from old-site bio? — Shaykh Khalis/A.J.
 - [ ] Umrah: entity created from old-site page (`programs/umrah.md`, Nov 21–28 2026, Zeffy registration) — confirm nav placement + whether registration moves to Stripe this cycle — A.J.
 - [ ] Old giving categories (One-Time/Sustaining/Zakatul Fitr/Zakatul Maal on Gumroad!) — carry the fitr/maal split into Stripe products? — finance

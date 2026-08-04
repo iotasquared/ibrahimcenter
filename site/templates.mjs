@@ -213,7 +213,7 @@ export function programsIndex({ ctx, programs }) {
     <a class="card" href="/programs/${p.slug}/"${ctx.accentStyle(p)}>${chip(ctx, p)}
       <h3>${esc(p.title)}</h3>
       <p>${esc(p.card ?? "Details coming soon.")}</p>
-      ${p.facts?.schedule ? `<p class="card-fact">${esc(p.facts.schedule)}</p>` : ""}
+      ${p.facts?.schedule || p.facts?.dates ? `<p class="card-fact">${esc(p.facts.schedule ?? p.facts.dates)}</p>` : ""}
       <span class="card-more">Learn more →</span>
     </a>`).join("")}
   </div>
@@ -224,8 +224,10 @@ export function program({ ctx, p, hero = false }) {
   if (!p) return placeholder("This program");
   const f = p.facts ?? {};
   const acc = ctx.accentStyle(p);
-  const factRows = [["Schedule", f.schedule], ["Audience", f.audience], ["Registration", typeof f.registration === "string" ? f.registration : null]]
-    .filter(([, v]) => v);
+  // Sentence-case bare values ("drop-in", "everyone") so adjacent fact strips match.
+  const cap = v => (typeof v === "string" && v ? v[0].toUpperCase() + v.slice(1) : v);
+  const factRows = [["Dates", f.dates], ["Schedule", f.schedule], ["Audience", f.audience], ["Registration", typeof f.registration === "string" ? f.registration : null]]
+    .filter(([, v]) => v).map(([k, v]) => [k, cap(v)]);
   return `
 <section class="page-head accented"${acc}><div class="band-inner"><p class="kicker">${hero ? "Children & Families" : "Programs"}</p><h1>${esc(p.title)}</h1></div></section>
 <section class="band band-tight"${acc}><div class="band-inner narrow">${chip(ctx, p)}

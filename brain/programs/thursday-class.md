@@ -12,7 +12,7 @@ spiritual_review: null
 last_verified: null
 review: quarterly
 facts:
-  schedule: "Thursdays (time unconfirmed)"
+  schedule: "Thursdays — time being confirmed"
   location: campus
   audience: null
   registration: null
