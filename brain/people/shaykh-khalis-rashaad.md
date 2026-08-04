@@ -3,12 +3,12 @@ slug: shaykh-khalis-rashaad
 title: Shaykh Khalis Rashaad
 layer: person
 lifecycle: active
-status: draft
+status: approved
 owner: aj
-approved_by: null
-approved_date: null
+approved_by: aj
+approved_date: 2026-08-03
 spiritual_review: null
-last_verified: null
+last_verified: 2026-08-03
 review: annual
 facts:
   roles:
@@ -26,7 +26,7 @@ card: >-
   teaching sacred knowledge and cultivating a community rooted in faith,
   companionship, and service.
 verify:
-  - "Bio approved by Shaykh Khalis; owner per workbook = aj@ibrahimcenter.org"
+  - "Cleared for publication by A.J., 2026-08-03 (owner per workbook = aj@ibrahimcenter.org); an updated bio is expected and will come in as a new draft"
   - "DECIDED (A.J., 2026-07-23): keep the published bio focused on his role at the Center — MBA/CPA + outside firms retained as metadata only, NOT in the public bio"
   - "Ihsan Hub approved description + URL"
   - "High-res photo file obtained"

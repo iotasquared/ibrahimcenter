@@ -3,12 +3,12 @@ slug: aj-qureshi
 title: A.J. Qureshi
 layer: person
 lifecycle: active
-status: draft
+status: approved
 owner: amna
-approved_by: null
-approved_date: null
+approved_by: aj
+approved_date: 2026-08-03
 spiritual_review: null
-last_verified: null
+last_verified: 2026-08-03
 review: annual
 facts:
   roles:
@@ -21,7 +21,7 @@ card: >-
   development background, emcee and organizer, helping make Ibrahim Center a
   welcoming home for everyone who walks through its doors.
 verify:
-  - "Bio approved by A.J.; public email confirmed"
+  - "Public email aj@ibrahimcenter.org — confirm before it is printed anywhere"
 links: {}
 ---
 

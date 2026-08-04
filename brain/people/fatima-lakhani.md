@@ -3,12 +3,12 @@ slug: fatima-lakhani
 title: Fatima Lakhani
 layer: person
 lifecycle: active
-status: draft
+status: approved
 owner: amna
-approved_by: null
-approved_date: null
+approved_by: aj
+approved_date: 2026-08-03
 spiritual_review: null
-last_verified: null
+last_verified: 2026-08-03
 review: annual
 facts:
   roles:
@@ -20,7 +20,7 @@ card: >-
   creating spaces where children and families develop a lasting love for Islam,
   community, and the masjid.
 verify:
-  - "Bio approved by Fatima"
+  - "Cleared for publication by A.J., 2026-08-03; an updated bio from Fatima is expected and will come in as a new draft"
 links: {}
 ---
 

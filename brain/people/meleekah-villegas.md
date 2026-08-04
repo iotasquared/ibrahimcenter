@@ -3,12 +3,12 @@ slug: meleekah-villegas
 title: Meleekah Villegas
 layer: person
 lifecycle: active
-status: draft
+status: approved
 owner: amna
-approved_by: null
-approved_date: null
+approved_by: aj
+approved_date: 2026-08-03
 spiritual_review: null
-last_verified: null
+last_verified: 2026-08-03
 review: annual
 facts:
   full_name: "Melanie Meleekah Villegas"
@@ -20,7 +20,7 @@ card: >-
   Meleekah is a Tejana activist, community researcher, and artist working on
   health, wellness, and community development in Houston's Third Ward.
 verify:
-  - "Bio approved by Meleekah"
+  - "Cleared for publication by A.J., 2026-08-03; an updated bio from Meleekah is expected and will come in as a new draft"
 links: {}
 ---
 

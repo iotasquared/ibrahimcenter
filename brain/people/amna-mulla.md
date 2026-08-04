@@ -3,12 +3,12 @@ slug: amna-mulla
 title: Amna Mulla
 layer: person
 lifecycle: active
-status: draft
+status: approved
 owner: amna
-approved_by: null
-approved_date: null
+approved_by: aj
+approved_date: 2026-08-03
 spiritual_review: null
-last_verified: null
+last_verified: 2026-08-03
 review: annual
 facts:
   roles:
@@ -23,7 +23,7 @@ card: >-
   an intimate, supportive community where families, elders, and youth feel at
   home.
 verify:
-  - "Bio approved by Amna; photo file"
+  - "Higher-resolution portrait if one exists (current file recovered from the old site)"
 links: {}
 ---
 
