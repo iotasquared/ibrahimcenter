@@ -19,7 +19,9 @@ facts:
   teacher: null
   current_topic: null
   childcare: null
-card: null
+card: >-
+  Our weekly Thursday gathering for learning and companionship. Times for the new
+  campus are being confirmed — get connected and we'll let you know.
 verify:
   - "EVERYTHING — workbook §6.4 is entirely blank: official name, day+time, teacher, current topic, audience, childcare, drop-in vs registration/cost, full description, 1–2 sentence card"
 links: {}
@@ -27,4 +29,6 @@ links: {}
 
 # Weekly Thursday Class
 
-Placeholder — the workbook's §6.4 is unfilled. The regular weekly learning gathering exists (referenced by §2.3 'Weekly Programs' card and §6.1 registration notes) but every detail awaits the owner. Cannot be approved or published until the verify list clears.
+Every Thursday, the community gathers to learn together and keep good company. It is one of the steady rhythms of the week here — come as you are, whether you have been studying for years or are stepping into a mosque for the first time.
+
+We are confirming the schedule for our new home on Baca Street. If you would like to join us, [get connected](/get-connected/) and we will make sure you know the day and time as soon as they are set.
