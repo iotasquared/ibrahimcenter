@@ -33,6 +33,7 @@ links:
 | assets/photos/amna-mulla.webp | Amna Mulla portrait | published by org on old site | About/leadership | Amna Mulla, Executive Director |
 | assets/photos/meleekah-villegas.webp | Meleekah Villegas portrait | published by org on old site | About/leadership | Meleekah Villegas |
 | assets/photos/aj-qureshi.jpg | A.J. Qureshi portrait, flower-wall backdrop | self-supplied by the subject, 2026-08-03 | About/leadership | A.J. Qureshi, Chief of Staff and Associate Director |
+| assets/photos/fatima-lakhani.jpg | Fatima Lakhani portrait, outdoors | supplied by Fatima via A.J., 2026-08-03 | About/leadership | Fatima Lakhani, Youth Director and Lead Educator for Little Stewards |
 | assets/photos/gathering-teaching.webp | Shaykh Khalis teaching a gathering (pre-darkened; old-site hero) | published by org on old site; adults | hero background (draft until Amna approves hero) | Shaykh Khalis teaching a community gathering at Ibrahim Center |
 | assets/photos/why-thumb.webp | old-site Why thumbnail | published by org | TBD | — |
 | assets/photos/event-2026-06.webp | June 2026 event image (unidentified) | published by org | TBD — identify subject first | — |

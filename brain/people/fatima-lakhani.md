@@ -14,12 +14,13 @@ facts:
   roles:
     - { title: "Youth Director; Lead Educator & Program Coordinator, Little Stewards", from: null, to: null }
   email: "Fatima@Ibrahimcenter.org"
+  photo: "/assets/photos/fatima-lakhani.jpg (supplied via A.J. 2026-08-03)"
 card: >-
   Fatima serves as Youth Director and lead educator for Little Stewards,
   creating spaces where children and families develop a lasting love for Islam,
   community, and the masjid.
 verify:
-  - "Bio approved by Fatima; photo file"
+  - "Bio approved by Fatima"
 links: {}
 ---
 
