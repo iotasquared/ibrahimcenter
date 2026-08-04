@@ -20,6 +20,11 @@ facts:
   old_rails: "Four Gumroad links + Zeffy campaign 'Ibrahim Center Ramadan Fundraiser 2026 — Caring for What We Plant' — ALL retire into Stripe"
   old_headline: "Support a Healthy Expression of Islam in America — values. visions. virtues."
   donor_contact: null
+  # Ways to give while Stripe is pending. Rendered on the Donate page in this order.
+  giving_today:
+    - "In person — at Jumu'ah on Fridays, or any time the center is open."
+    - "By check — payable to Ibrahim Center, mailed to 618 Baca Street, Houston, Texas 77013."
+    - "By email — write to connect@ibrahimcenter.org and we will arrange your gift."
 card: >-
   Your support sustains sacred learning, children's formation, community
   gatherings, spiritual care, and the daily life of Ibrahim Center.
@@ -29,6 +34,8 @@ verify:
   - "Giving categories 1–5 and $25/$50/$100/$250/$500+ examples (workbook §4.2 blank; finance team approves)"
   - "Donor contact person; transparency link (annual report / governance)"
   - "Recurring gifts language; closing appeal (2–3 sentences)"
+  - "Check payee name — 'Ibrahim Center' taken from legal_name; confirm against the bank account before print/mail use"
+  - "Any other giving rails in use today (Zelle, cash app, text-to-give)? None listed — confirm none exist"
 links:
   stripe: null   # payment link/checkout — single quarantined reference
 ---

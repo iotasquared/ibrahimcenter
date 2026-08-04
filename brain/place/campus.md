@@ -35,6 +35,10 @@ links:
 
 # Visit
 
+## Prayer at Ibrahim Center
+
+We gather for Jumu'ah — the Friday congregational prayer — every Friday at 1:30 PM, and the coffee shop is open before and after. We do not currently hold daily congregational prayers at the center.
+
 ## Location & parking
 
 Ibrahim Center · 618 Baca Street, Houston, Texas 77013. Parking is available on-site and along surrounding neighborhood streets. Please be mindful of our neighbors and avoid blocking driveways or restricted areas.

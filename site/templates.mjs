@@ -57,6 +57,9 @@ ${ctx.staging ? `<div class="staging-ribbon">Staging preview — unapproved draf
     <div>
       <p class="foot-head">Connect</p>
       <p><a href="/get-connected/">Get connected</a><br><a href="/new-to-islam/">New to Islam</a><br><a href="/donate/">Support the center</a></p>
+      <p><a href="mailto:connect@ibrahimcenter.org">connect@ibrahimcenter.org</a><br>
+        <a href="https://chat.whatsapp.com/Ceiv3O4cw81Gx7JkgjxlRb">WhatsApp community</a><br>
+        <a href="https://www.instagram.com/ibrahimcenter/">Instagram</a></p>
     </div>
   </div>
   <p class="foot-legal">© ${new Date().getFullYear()} Ibrahim Islamic Center</p>
@@ -245,7 +248,7 @@ export function events({ ctx, upcoming, past }) {
     <div class="event-row"><span class="event-date">${esc(e.facts.date)}</span>
       <span class="event-title">${esc(e.title)}</span><span>${esc(e.card ?? "")}</span></div>`).join("")}</div>`
     : `<p class="lede">Our next gatherings are being scheduled. In the meantime, you are always welcome at <a href="/programs/jumuah/">Jumu'ah — Fridays at 1:30 PM</a> — and the <a href="/programs/coffee-shop/">coffee shop</a> before and after.</p>
-       <p>Follow our social channels or <a href="/get-connected/">get connected</a> to hear about events first.</p>`}
+       <p>Join our <a href="https://chat.whatsapp.com/Ceiv3O4cw81Gx7JkgjxlRb">WhatsApp community</a> or <a href="/get-connected/">get connected</a> to hear about events first.</p>`}
   ${past.length ? `<h2>Past events</h2><div class="event-list">${past.map(e => `
     <div class="event-row past"><span class="event-date">${esc(e.facts.date)}</span><span class="event-title">${esc(e.title)}</span></div>`).join("")}</div>` : ""}
 </div></section>`;
@@ -281,7 +284,12 @@ export function donate({ ctx, donate, zakat }) {
   <p class="lede">Ibrahim Center depends on the generosity of people who believe in the transformative power of sacred learning, companionship, and service. Your support helps sustain scholars and teachers, children's programs, spiritual care, community gatherings, and a welcoming campus for generations to come.</p>
   ${donate?.links?.stripe
     ? `<p><a class="btn btn-primary btn-lg" href="${esc(donate.links.stripe)}">Donate Now</a></p>`
-    : `<p class="pending-note">Online giving is being finalized — to give today, please reach out at <a href="mailto:connect@ibrahimcenter.org">connect@ibrahimcenter.org</a>.</p>`}
+    : Array.isArray(donate?.facts?.giving_today) && donate.facts.giving_today.length
+      ? `<div class="pending-note">
+    <p><strong>Ways to give today.</strong> Online giving is being finalized; until then, every gift below reaches us directly.</p>
+    <ul class="giving-ways">${donate.facts.giving_today.map(w => `<li>${esc(w)}</li>`).join("")}</ul>
+  </div>`
+      : `<p class="pending-note">Online giving is being finalized — to give today, please reach out at <a href="mailto:connect@ibrahimcenter.org">connect@ibrahimcenter.org</a>.</p>`}
   ${donate?.facts?.tax_statement ? `<p class="muted legal-note">${esc(donate.facts.tax_statement)}</p>` : ""}
 </div></section>
 ${zakat ? `

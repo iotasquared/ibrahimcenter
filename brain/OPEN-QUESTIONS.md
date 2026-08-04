@@ -18,7 +18,7 @@
 - [x] **New neighborhood** — intentionally NOT named/characterized (A.J. 07-23, strategic); copy uses "our new home" + street address only
 - [ ] **Read + correct the new drafts**: Vision, Values (4), Culture, Community Commitments, Our Story, New to Islam — A.J. + Shaykh Khalis (religious)
 - [ ] **Asset folder + minimum photo set** (hero, one per program, staff portraits) with consent rows in `media/manifest.md` — A.J.
-- [ ] **Footer**: contact email/phone, office hours, social URLs (IG/FB/YouTube/WhatsApp), copyright wording — A.J.
+- [x] **Footer**: **no phone number — email only** (A.J., 2026-08-03, deliberate); connect@ibrahimcenter.org, WhatsApp community and Instagram now in the footer. Still open: office hours, Facebook/YouTube (keep or drop), copyright wording — A.J.
 
 ## Programs (content blank in workbook)
 
@@ -71,7 +71,7 @@
 - [ ] Newsletter: delivery provider choice + list ownership — Dan
 - [ ] Events: first three real events (title/date/description/image/registration) — Amna
 - [ ] Google Calendar: publish/subscribe decision (§8.1) — Amna
-- [ ] Daily prayer times on site: yes/no (workbook only ever mentions Jumu'ah — intentional?) — Amna/Shaykh Khalis
+- [x] Daily prayer times: **the center does not hold daily congregational prayers — Jumu'ah only** (A.J., 2026-08-03). Now stated plainly on the Visit page rather than left as a silence visitors misread as a missing section.
 
 ## Surfaced by the old-site mine (2026-07-22)
 

@@ -158,6 +158,11 @@ img { max-width: 100%; }
 .people-lead .person h3 { font-size: 1.35rem; }
 .people-lead + .people-grid { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 
+/* ways to give, while online giving is pending */
+.giving-ways { margin: 0.7rem 0 0; padding-left: 1.1rem; }
+.giving-ways li { margin-bottom: 0.45rem; color: var(--ink-soft); }
+.giving-ways li:last-child { margin-bottom: 0; }
+
 /* support grid (new to islam) */
 .support-grid { display: grid; gap: 0.7rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); margin: 1.4rem 0; }
 .support-item { background: #fffdf8; border: 1px solid var(--line); border-left: 3px solid var(--brass-soft); border-radius: 0.6rem; padding: 0.8rem 1rem; font-size: 0.95rem; }

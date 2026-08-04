@@ -15,7 +15,7 @@ facts:
   schedule: "Monthly"
   location: campus
   audience: "Brothers ages 18 and older"
-  registration: "Via Events page and social media"
+  registration: "Email connect@ibrahimcenter.org"
   lead: shaykh-khalis-rashaad
 card: >-
   A monthly gathering for men cultivating faith, brotherhood, and purposeful
@@ -44,4 +44,4 @@ Topics may include: spiritual discipline and consistency in worship · purpose, 
 
 While each session is unique, Menaissance seeks to help men become more grounded in their faith, more present in their relationships, and more responsible to the people and communities they serve.
 
-**Frequency:** Monthly. **Audience:** Open to brothers ages 18 and older. Registration information and upcoming topics can be found through our Events page and social media channels.
+**Frequency:** Monthly. **Audience:** Open to brothers ages 18 and older. To join us or ask about upcoming topics, email [connect@ibrahimcenter.org](mailto:connect@ibrahimcenter.org) or come find us in the [WhatsApp community](https://chat.whatsapp.com/Ceiv3O4cw81Gx7JkgjxlRb).

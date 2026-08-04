@@ -35,7 +35,7 @@ Every Friday, our community gathers for Jumu'ah, the weekly congregational praye
 
 Whether you have been part of Ibrahim Center for years or are joining us for the first time, you are warmly welcomed. Each week features a sermon from one of our teachers or guest speakers, offering timeless Islamic wisdom and practical guidance for modern life.
 
-Jumu'ah prayers are currently held in person. Please follow our social media channels for updates on guest speakers, special events, and occasional livestreamed programs.
+Jumu'ah prayers are held in person. For updates on guest speakers, special events, and occasional livestreamed programs, join our [WhatsApp community](https://chat.whatsapp.com/Ceiv3O4cw81Gx7JkgjxlRb) or follow us on [Instagram](https://www.instagram.com/ibrahimcenter/).
 
 **Jumu'ah Prayer begins at 1:30 PM every Friday** at Ibrahim Center, 618 Baca Street, Houston, Texas. Parking is available on-site and along surrounding neighborhood streets — please be mindful of our neighbors.
 

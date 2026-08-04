@@ -15,7 +15,7 @@ facts:
   schedule: Monthly
   location: campus
   audience: "Women of all ages and backgrounds"
-  registration: "Via events calendar and social media"
+  registration: "Email connect@ibrahimcenter.org"
   facilitator: null
 card: >-
   A monthly gathering nurturing faith, companionship, and spiritual growth
@@ -45,4 +45,4 @@ Spiritual growth and worship · the lives of righteous women · family and relat
 
 Throughout the year, Sisters Caravan hosts special events and collaborative programs, including gatherings during Rabi al-Awwal, Ramadan programs, visiting scholars, devotional celebrations, and partnerships with organizations dedicated to women's Islamic learning.
 
-Information about upcoming gatherings can be found through our events calendar and social media channels.
+To hear about upcoming gatherings, email [connect@ibrahimcenter.org](mailto:connect@ibrahimcenter.org) or join our [WhatsApp community](https://chat.whatsapp.com/Ceiv3O4cw81Gx7JkgjxlRb).
