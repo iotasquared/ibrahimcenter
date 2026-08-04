@@ -1,0 +1,13 @@
+# The brain is parsed as text by our own build; keep line endings LF everywhere so a
+# Windows checkout can't change how entities parse. Belt and braces — the build also
+# normalizes CRLF on read.
+* text=auto eol=lf
+
+# Binary assets: never touched.
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.svg binary
+*.ico binary
+*.docx binary

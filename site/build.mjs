@@ -18,10 +18,21 @@ const DIST = process.env.OUT_DIR ? join(ROOT, process.env.OUT_DIR) : join(SITE, 
 const STAGING = process.argv.includes("--staging");
 // Mount base: "" for local preview + custom-domain root; "/ibrahimcenter" for the Pages project site.
 const BASE = (process.env.SITE_BASE ?? "").replace(/\/+$/, "");
+// Git Bash (MSYS) rewrites a leading-slash env value into a Windows path, so
+// SITE_BASE=/ibrahimcenter silently becomes C:/Program Files/Git/ibrahimcenter and every
+// link on the deployed site points at a local disk. Refuse rather than ship that.
+if (BASE && (!BASE.startsWith("/") || BASE.includes(":"))) {
+  console.error(`FATAL: SITE_BASE="${BASE}" is not a URL path.`);
+  console.error('If you are on Git Bash, its path conversion mangled it. Use PowerShell,');
+  console.error('or prefix the command with MSYS_NO_PATHCONV=1.');
+  process.exit(1);
+}
 
 // ---------- load entities ----------
 function loadEntity(path) {
-  const raw = readFileSync(path, "utf8");
+  // Normalize CRLF: git on Windows checks these out with \r\n, which the frontmatter
+  // regex below would silently fail to match — emitting a hollow site with no error.
+  const raw = readFileSync(path, "utf8").replace(/\r\n/g, "\n");
   const m = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
   if (!m) return null;
   const meta = yaml.load(m[1]) ?? {};
@@ -57,6 +68,15 @@ if (existsSync(evRoot)) {
   for (const y of readdirSync(evRoot)) {
     if (/^\d{4}$/.test(y)) brain.events.push(...loadDir(join(evRoot, y)));
   }
+}
+
+// A hollow brain means a parse failure, not an empty institution. Fail loudly rather
+// than emit a site with no content — a silent empty build must never reach deploy.
+const entityCount = Object.values(brain)
+  .reduce((n, v) => n + (Array.isArray(v) ? v.length : Object.keys(v).length), 0);
+if (entityCount === 0) {
+  console.error("FATAL: no entities loaded from brain/. Refusing to emit a hollow site.");
+  process.exit(1);
 }
 
 // ---------- approval law ----------
@@ -107,8 +127,20 @@ page("index.html", "Ibrahim Islamic Center — A Home for Faith, Learning, and C
 page("visit/index.html", "Visit — Ibrahim Islamic Center",
   T.visit({ ctx, campus: gate(brain.place.campus), jumuah: gate(programsBySlug["jumuah"]) }));
 
+// Leadership order is a governance statement, not alphabetical (A.J., 2026-08-03): the
+// Shaykh stands alone above the team as spiritual authority; the rest follow in set order.
+// Anyone not named here still renders, appended after — a new person must never vanish.
+const PEOPLE_LEAD = "shaykh-khalis-rashaad";
+const PEOPLE_ORDER = ["amna-mulla", "aj-qureshi", "fatima-lakhani", "meleekah-villegas"];
+const peopleBySlug = Object.fromEntries(brain.people.map(p => [p.slug, p]));
+const leadPerson = gate(peopleBySlug[PEOPLE_LEAD]);
+const teamPeople = [
+  ...PEOPLE_ORDER.map(s => peopleBySlug[s]).filter(Boolean),
+  ...brain.people.filter(p => p.slug !== PEOPLE_LEAD && !PEOPLE_ORDER.includes(p.slug)),
+].filter(visible);
+
 page("about/index.html", "About — Ibrahim Islamic Center",
-  T.about({ ctx, mission: gate(brain.identity.mission), story: gate(brain.history.story), people: brain.people.filter(visible), values: gate(brain.identity.values) }));
+  T.about({ ctx, mission: gate(brain.identity.mission), story: gate(brain.history.story), people: teamPeople, values: gate(brain.identity.values), lead: leadPerson }));
 
 page("programs/index.html", "Programs — Ibrahim Islamic Center",
   T.programsIndex({ ctx, programs: brain.programs.filter(visible).filter(p => p.lifecycle === "active") }));

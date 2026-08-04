@@ -150,6 +150,13 @@ img { max-width: 100%; }
 .person-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .person-role { color: var(--brass); font-weight: 600; font-size: 0.88rem; margin-bottom: 0.4rem; }
 .person-bio { color: var(--ink-soft); font-size: 0.92rem; }
+/* The spiritual lead stands alone above the team: own row, centered, a size larger.
+   Followed by a gold rule — the team reads as gathered beneath him, not beside him. */
+.people-lead { display: flex; justify-content: center; margin-top: 1.8rem; }
+.people-lead .person { max-width: 24rem; }
+.people-lead .person-photo { width: 10.5rem; height: 12.5rem; }
+.people-lead .person h3 { font-size: 1.35rem; }
+.people-lead + .people-grid { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 
 /* support grid (new to islam) */
 .support-grid { display: grid; gap: 0.7rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); margin: 1.4rem 0; }

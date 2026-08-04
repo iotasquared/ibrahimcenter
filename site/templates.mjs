@@ -170,7 +170,19 @@ export function visit({ ctx, campus, jumuah }) {
 </div></section>`;
 }
 
-export function about({ ctx, mission, story, people, values }) {
+// One person card. Shared by the lead row and the team grid so the two never drift apart.
+function personCard(ctx, p) {
+  return `
+    <div class="person">${chip(ctx, p)}
+      ${p.facts?.photo ? `<div class="person-photo"><img src="${esc(String(p.facts.photo).split(" ")[0])}" alt="${esc(p.title)}"></div>`
+        : `<div class="person-photo" aria-hidden="true"><span>${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span></div>`}
+      <h3>${esc(p.title)}</h3>
+      <p class="person-role">${esc(p.facts?.roles?.[0]?.title ?? "")}</p>
+      <p class="person-bio">${esc(p.card ?? "")}</p>
+    </div>`;
+}
+
+export function about({ ctx, mission, story, people, values, lead }) {
   return `
 <section class="page-head"><div class="band-inner"><p class="kicker">About</p><h1>Rooted in Traditional Islam</h1></div></section>
 ${mission ? `<section class="band band-tight"><div class="band-inner narrow">${chip(ctx, mission)}
@@ -185,15 +197,9 @@ ${values ? `<section class="band"><div class="band-inner narrow">${chip(ctx, val
 </div></section>` : ""}
 <section class="band band-cream"><div class="band-inner">
   <h2 class="center">Leadership & Team</h2>${ORNAMENT}
+  ${lead ? `<div class="people-lead">${personCard(ctx, lead)}</div>` : ""}
   <div class="people-grid">
-    ${people.map(p => `
-    <div class="person">${chip(ctx, p)}
-      ${p.facts?.photo ? `<div class="person-photo"><img src="${esc(String(p.facts.photo).split(" ")[0])}" alt="${esc(p.title)}"></div>`
-        : `<div class="person-photo" aria-hidden="true"><span>${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span></div>`}
-      <h3>${esc(p.title)}</h3>
-      <p class="person-role">${esc(p.facts?.roles?.[0]?.title ?? "")}</p>
-      <p class="person-bio">${esc(p.card ?? "")}</p>
-    </div>`).join("")}
+    ${people.map(p => personCard(ctx, p)).join("")}
   </div>
 </div></section>`;
 }

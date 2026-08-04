@@ -15,12 +15,13 @@ facts:
     - { title: "Chief of Staff / Associate Director", from: null, to: null }
   email: "aj@ibrahimcenter.org"
   education: "Pursuing M.A. in Clinical Mental Health Counseling & Psychology"
+  photo: "/assets/photos/aj-qureshi.jpg (supplied by A.J. 2026-08-03)"
 card: >-
   A.J. is a native Houstonian with a heart for service — counseling and human
   development background, emcee and organizer, helping make Ibrahim Center a
   welcoming home for everyone who walks through its doors.
 verify:
-  - "Bio approved by A.J.; public email confirmed; photo file"
+  - "Bio approved by A.J.; public email confirmed"
 links: {}
 ---
 

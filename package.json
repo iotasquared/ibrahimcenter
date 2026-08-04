@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node site/build.mjs",
     "staging": "node site/build.mjs --staging",
-    "preview": "node site/build.mjs --staging && python3 -m http.server 4173 -d site/dist",
+    "preview": "node site/build.mjs --staging && node site/serve.mjs 4173",
     "deploy:review": "OUT_DIR=docs SITE_BASE=/ibrahimcenter node site/build.mjs --staging && git add -A docs && git commit -m \"Deploy review site to docs/\" && git push"
   },
   "repository": {
