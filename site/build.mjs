@@ -5,6 +5,7 @@
 
 import { readFileSync, readdirSync, mkdirSync, writeFileSync, cpSync, rmSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { marked } from "marked";
 import * as yaml from "js-yaml";
@@ -103,6 +104,10 @@ export const ctx = {
   accentStyle,
   base: BASE,
   today: new Date().toISOString().slice(0, 10),
+  // Stylesheet fingerprint. Pages cache for 10 minutes, so without this a reviewer who
+  // visited before a design change keeps seeing the old CSS over the new HTML and
+  // concludes the change failed. The URL changes only when the CSS actually changes.
+  cssVersion: createHash("sha1").update(readFileSync(join(SITE, "theme.css"))).digest("hex").slice(0, 8),
 };
 
 // ---------- program ordering for cards ----------

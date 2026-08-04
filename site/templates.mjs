@@ -23,7 +23,7 @@ export function shell({ ctx, title, content, path }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 ${ctx.staging ? '<meta name="robots" content="noindex, nofollow">' : ""}
-<link rel="stylesheet" href="/theme.css">
+<link rel="stylesheet" href="/theme.css?v=${ctx.cssVersion ?? "0"}">
 <link rel="icon" href="/assets/brand/favicon.jpg">
 </head>
 <body>
