@@ -147,6 +147,9 @@ const teamPeople = [
 page("about/index.html", "About — Ibrahim Islamic Center",
   T.about({ ctx, mission: gate(brain.identity.mission), story: gate(brain.history.story), people: teamPeople, values: gate(brain.identity.values), lead: leadPerson }));
 
+page("leadership/index.html", "Leadership & Team — Ibrahim Islamic Center",
+  T.leadership({ ctx, lead: leadPerson, people: teamPeople }));
+
 page("programs/index.html", "Programs — Ibrahim Islamic Center",
   T.programsIndex({ ctx, programs: brain.programs.filter(visible).filter(p => p.lifecycle === "active") }));
 

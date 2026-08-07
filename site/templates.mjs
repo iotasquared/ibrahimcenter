@@ -4,8 +4,9 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 const ORNAMENT = `<div class="ornament" aria-hidden="true"><svg viewBox="0 0 120 12" fill="none"><path d="M0 6h44M76 6h44" stroke="var(--gold)" stroke-width="1"/><rect x="55" y="1" width="10" height="10" transform="rotate(45 60 6)" stroke="var(--gold)" stroke-width="1.2"/><circle cx="48" cy="6" r="1.4" fill="var(--gold)"/><circle cx="72" cy="6" r="1.4" fill="var(--gold)"/></svg></div>`;
 
 const NAV = [
-  ["/", "Home"], ["/visit/", "Visit"], ["/about/", "About"], ["/programs/", "Programs"],
-  ["/events/", "Events"], ["/little-stewards/", "Little Stewards"], ["/programs/umrah/", "Umrah"], ["/new-to-islam/", "New to Islam"],
+  ["/", "Home"], ["/visit/", "Visit"], ["/about/", "About"], ["/leadership/", "Leadership"],
+  ["/programs/", "Programs"], ["/events/", "Events"], ["/little-stewards/", "Little Stewards"],
+  ["/programs/umrah/", "Umrah"], ["/new-to-islam/", "New to Islam"],
 ];
 
 // Render an entity body as prose, dropping the in-repo "*Draft — read and correct*" notes
@@ -185,6 +186,35 @@ function personCard(ctx, p) {
     </div>`;
 }
 
+// One person at full length: portrait beside the whole biography, not a card blurb.
+// The lead variant runs wider and centered above the rest (spiritual authority, per A.J.).
+function personFull(ctx, p, lead = false) {
+  return `
+    <article class="person-full${lead ? " person-full-lead" : ""}">${chip(ctx, p)}
+      <div class="person-full-photo">
+        ${p.facts?.photo ? `<img src="${esc(String(p.facts.photo).split(" ")[0])}" alt="${esc(p.title)}">`
+          : `<span aria-hidden="true">${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span>`}
+      </div>
+      <div class="person-full-text">
+        <h3>${esc(p.title)}</h3>
+        <p class="person-role">${esc(p.facts?.roles?.[0]?.title ?? "")}</p>
+        <div class="prose">${bodyMd(ctx, p.body)}</div>
+        ${p.facts?.email ? `<p class="person-contact"><a class="text-link" href="mailto:${esc(p.facts.email)}">${esc(p.facts.email)}</a></p>` : ""}
+      </div>
+    </article>`;
+}
+
+export function leadership({ ctx, lead, people }) {
+  return `
+<section class="page-head"><div class="band-inner"><p class="kicker">Our People</p><h1>Leadership &amp; Team</h1></div></section>
+<section class="band"><div class="band-inner">
+  <p class="lede center narrow-center">The people who keep this house open — teaching, caring for the community, and welcoming everyone who walks through the doors.</p>
+  ${ORNAMENT}
+  ${lead ? personFull(ctx, lead, true) : ""}
+  <div class="people-full">${people.map(p => personFull(ctx, p)).join("")}</div>
+</div></section>`;
+}
+
 export function about({ ctx, mission, story, people, values, lead }) {
   return `
 <section class="page-head"><div class="band-inner"><p class="kicker">About</p><h1>Rooted in Traditional Islam</h1></div></section>
@@ -204,6 +234,7 @@ ${values ? `<section class="band"><div class="band-inner narrow">${chip(ctx, val
   <div class="people-grid">
     ${people.map(p => personCard(ctx, p)).join("")}
   </div>
+  <p class="center more-link"><a class="btn btn-ghost" href="/leadership/">Meet our leadership &amp; team →</a></p>
 </div></section>`;
 }
 
