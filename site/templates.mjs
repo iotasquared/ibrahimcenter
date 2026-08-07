@@ -201,7 +201,7 @@ function personFull(ctx, p, lead = false) {
         <h3>${esc(p.title)}</h3>
         <p class="person-role">${esc(p.facts?.roles?.[0]?.title ?? "")}</p>
         <div class="prose">${bodyMd(ctx, p.body)}</div>
-        ${p.facts?.email ? `<p class="person-contact"><a class="text-link" href="mailto:${esc(p.facts.email)}">${esc(p.facts.email)}</a></p>` : ""}
+        ${p.facts?.email ? (e => `<p class="person-contact"><a class="text-link" href="mailto:${esc(e)}">${esc(e)}</a></p>`)(String(p.facts.email).toLowerCase()) : ""}
       </div>
     </article>`;
 }

@@ -13,6 +13,7 @@ review: annual
 facts:
   roles:
     - { title: "Community Fellow", from: null, to: null }
+  email: "hamida@ibrahimcenter.org"
   education: "B.A. Liberal Arts and Islamic Studies, minor in Arabic — Zaytuna College"
   prior_service: [ALIM, IMAN, "Ta'leef", "Zaytuna College", Maristan, "Amaanah Refugee Services"]
   photo: "/assets/photos/hamida-mitha.jpg (supplied via A.J. 2026-08-07)"
@@ -21,7 +22,7 @@ card: >-
   events, and community care — and a deep interest in community building and
   healing, individually and together.
 verify:
-  - "Bio and title supplied by A.J., 2026-08-07; public email if she wants one listed"
+  - "Bio, title, and public email supplied by A.J., 2026-08-07"
 links: {}
 ---
 
