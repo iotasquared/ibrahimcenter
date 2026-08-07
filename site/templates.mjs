@@ -175,14 +175,16 @@ export function visit({ ctx, campus, jumuah }) {
 }
 
 // One person card. Shared by the lead row and the team grid so the two never drift apart.
-function personCard(ctx, p) {
+// bio: show the short blurb (About). more: link down to the full biography (Leadership roster).
+function personCard(ctx, p, { bio = true, more = false } = {}) {
   return `
     <div class="person">${chip(ctx, p)}
       ${p.facts?.photo ? `<div class="person-photo"><img src="${esc(String(p.facts.photo).split(" ")[0])}" alt="${esc(p.title)}"></div>`
         : `<div class="person-photo" aria-hidden="true"><span>${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span></div>`}
       <h3>${esc(p.title)}</h3>
       <p class="person-role">${esc(p.facts?.roles?.[0]?.title ?? "")}</p>
-      <p class="person-bio">${esc(p.card ?? "")}</p>
+      ${bio ? `<p class="person-bio">${esc(p.card ?? "")}</p>` : ""}
+      ${more ? `<p class="person-more"><a class="text-link" href="#${esc(p.slug)}">Learn more →</a></p>` : ""}
     </div>`;
 }
 
@@ -190,7 +192,7 @@ function personCard(ctx, p) {
 // The lead variant runs wider and centered above the rest (spiritual authority, per A.J.).
 function personFull(ctx, p, lead = false) {
   return `
-    <article class="person-full${lead ? " person-full-lead" : ""}">${chip(ctx, p)}
+    <article class="person-full${lead ? " person-full-lead" : ""}" id="${esc(p.slug)}">${chip(ctx, p)}
       <div class="person-full-photo">
         ${p.facts?.photo ? `<img src="${esc(String(p.facts.photo).split(" ")[0])}" alt="${esc(p.title)}">`
           : `<span aria-hidden="true">${esc(p.title.split(" ").map(w => w[0]).slice(0, 2).join(""))}</span>`}
@@ -210,6 +212,11 @@ export function leadership({ ctx, lead, people }) {
 <section class="band"><div class="band-inner">
   <p class="lede center narrow-center">The people who keep this house open — teaching, caring for the community, and welcoming everyone who walks through the doors.</p>
   ${ORNAMENT}
+  ${lead ? `<div class="people-lead">${personCard(ctx, lead, { bio: false, more: true })}</div>` : ""}
+  <div class="people-grid">${people.map(p => personCard(ctx, p, { bio: false, more: true })).join("")}</div>
+</div></section>
+<section class="band band-cream"><div class="band-inner">
+  <h2 class="center">Full Biographies</h2>${ORNAMENT}
   ${lead ? personFull(ctx, lead, true) : ""}
   <div class="people-full">${people.map(p => personFull(ctx, p)).join("")}</div>
 </div></section>`;

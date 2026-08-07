@@ -158,6 +158,12 @@ img { max-width: 100%; }
 .people-lead .person h3 { font-size: 1.35rem; }
 .people-lead + .people-grid { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 
+/* leadership page — roster of names and titles up top, full biographies below.
+   "Learn more" jumps down the page, so scroll-margin keeps the heading clear of the top edge. */
+html { scroll-behavior: smooth; }
+.person-more { margin-top: 0.45rem; font-size: 0.88rem; }
+.person-full { scroll-margin-top: 2rem; }
+
 /* leadership page — full biographies, portrait beside prose */
 .narrow-center { max-width: 34rem; margin-left: auto; margin-right: auto; }
 .more-link { margin-top: 2rem; }
