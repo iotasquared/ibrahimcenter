@@ -136,7 +136,7 @@ page("visit/index.html", "Visit — Ibrahim Islamic Center",
 // Shaykh stands alone above the team as spiritual authority; the rest follow in set order.
 // Anyone not named here still renders, appended after — a new person must never vanish.
 const PEOPLE_LEAD = "shaykh-khalis-rashaad";
-const PEOPLE_ORDER = ["amna-mulla", "aj-qureshi", "fatima-lakhani", "meleekah-villegas"];
+const PEOPLE_ORDER = ["amna-mulla", "aj-qureshi", "fatima-lakhani", "meleekah-villegas", "hamida-mitha"];
 const peopleBySlug = Object.fromEntries(brain.people.map(p => [p.slug, p]));
 const leadPerson = gate(peopleBySlug[PEOPLE_LEAD]);
 const teamPeople = [
